@@ -7,9 +7,15 @@ func GetOrderItems() gin.HandlerFunc {
 		c.JSON(200, gin.H{"message": "GetOrderItems"})
 	}
 }
+
 func GetOrderItem() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.JSON(200, gin.H{"message": "GetOrderItem"})
+	}
+}
+func GetOrderItemsByOrder() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		ctx.JSON(200, gin.H{"message": "GetOrderItemsByOrder"})
 	}
 }
 func CreateOrderItem() gin.HandlerFunc {
