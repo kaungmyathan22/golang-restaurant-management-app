@@ -5,7 +5,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/kaungmyathan22/golang-restaurant-management-app/database"
-	"github.com/kaungmyathan22/golang-restaurant-management-app/middlewares"
 	"github.com/kaungmyathan22/golang-restaurant-management-app/routes"
 	"go.mongodb.org/mongo-driver/mongo"
 )
@@ -20,7 +19,7 @@ func main() {
 	router := gin.New()
 	router.Use(gin.Logger())
 	routes.UserRoutes(router)
-	router.Use(middlewares.Authentication())
+	// router.Use(middlewares.Authentication())
 
 	routes.FoodRoutes(router)
 	routes.MenuRoutes(router)
