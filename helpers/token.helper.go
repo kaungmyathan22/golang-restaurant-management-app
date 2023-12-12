@@ -1,1 +1,3 @@
 package helpers
+
+func SignToken() {}
