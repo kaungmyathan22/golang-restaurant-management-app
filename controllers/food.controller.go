@@ -60,7 +60,6 @@ func GetFoods() gin.HandlerFunc {
 		c.JSON(http.StatusOK, allFoods[0])
 	}
 }
-
 func GetFood() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
