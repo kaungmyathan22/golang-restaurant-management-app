@@ -1,15 +1,15 @@
-package controller
+package controllers
 
 import (
 	"context"
 	"fmt"
-	"golang-restaurant-management/database"
-	"golang-restaurant-management/models"
 	"log"
 	"net/http"
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"github.com/kaungmyathan22/golang-restaurant-management-app/database"
+	"github.com/kaungmyathan22/golang-restaurant-management-app/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
